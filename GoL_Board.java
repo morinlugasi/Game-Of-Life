@@ -1,6 +1,7 @@
 package taskB;
 
 import java.util.Iterator;
+import java.util.Scanner;
 
 /**
  * 
@@ -10,17 +11,28 @@ import java.util.Iterator;
  */
 public class GoL_Board extends CA
 {
+	Scanner input = new Scanner(System.in);
+	
+	protected int board [][] ; 
+	
 	/**
 	 * 
 	 * @param rows: Number of rows
 	 * @param cols: Number of columns
 	 * Init new GoL automaton with an empty board
 	 */
-	private char board [][] = new char[rows][cols] ; 
+	
 	public GoL_Board(int rows, int cols)
 	{
-	
-		// TODO Auto-generated constructor stub
+		System.out.println("Enter numbers of rows: ");
+		rows = input.nextInt();
+		
+		System.out.println("Enter numbers of cols: ");
+		cols = input.nextInt();
+		
+		board = new int[rows][cols];
+		
+		
 	}
 
 	@Override
@@ -37,6 +49,12 @@ public class GoL_Board extends CA
 	 */
 	public void SetBoard(int[][] board)
 	{
+		System.out.println("Enter 1 for live or 0 for dead cell on the board: ");
+		for(int i=0; i< rows; i++){
+		    for(int j=0; j< cols; j++){
+		    	board[i][j]= input.nextInt();
+		    }
+		}
 		// TODO Auto-generated method stub
 	}
 

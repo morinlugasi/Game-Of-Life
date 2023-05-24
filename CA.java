@@ -8,6 +8,7 @@ package taskB;
  */
 public abstract class CA implements Iterable
 {
+hello everyoneeeeeeeeee
 	// TODO add code as appropriate.
 	// TODO Move code from GoL_Board as appropriate.
 }

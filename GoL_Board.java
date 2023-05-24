@@ -16,8 +16,10 @@ public class GoL_Board extends CA
 	 * @param cols: Number of columns
 	 * Init new GoL automaton with an empty board
 	 */
+	privet boolean [][] ; 
 	public GoL_Board(int rows, int cols)
 	{
+	
 		// TODO Auto-generated constructor stub
 	}
 
